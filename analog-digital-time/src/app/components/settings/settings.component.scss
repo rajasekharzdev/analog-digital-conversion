@@ -1,0 +1,14 @@
+@mixin font-properties {
+  font-weight: bold;
+  font-size: 20px;
+  color: cadetblue;
+}
+.settings-icon-cursor {
+  cursor: pointer;
+}
+.button-width {
+    width: 100%;
+}
+.analog-digital-text {
+  @include font-properties;
+}

@@ -1,0 +1,31 @@
+
+<i class="fa fa-cog settings-icon-cursor" (click)="openPopup()">&nbsp;<span class="analog-digital-text">Settings</span></i>
+
+ <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle}">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Increment/Decrement Time</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-4 col-12 text-center">
+              <button class="btn btn-primary btn-block button-width" (click)="decrement()">Decrement</button>
+            </div>
+            <div class="col-sm-4 col-12 text-center">
+              <input type="text" class="form-control" [value]="changedValue" />
+            </div>
+            <div class="col-sm-4 col-12 text-center">
+              <button class="btn btn-primary btn-block button-width" (click)="increment()">Increment</button>
+            </div>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" (click)="closePopup()">
+            Apply Changes
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>

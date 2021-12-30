@@ -1,0 +1,18 @@
+@mixin font-properties {
+    font-weight: bold;
+    font-size: 20px;
+    color: cadetblue;
+}
+.analog-digital-container {
+  .analog-digital-clock {
+    margin-top: 50px;
+  }
+
+  .analog-digital-text {
+    @include font-properties;
+  }
+
+  .digital-clock-margin-top {
+    margin-top: 25px;
+  }
+}
